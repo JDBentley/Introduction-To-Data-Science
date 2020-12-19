@@ -18,3 +18,4 @@ print(new_df.head(15))
 new_df.loc[new_df.population_proper < 100000, "location"] = "rural"
 new_df.loc[new_df.population_proper >= 100000, "location"] = "urban"
 print(new_df.head(15))
+
