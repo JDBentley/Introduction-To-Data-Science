@@ -58,3 +58,27 @@ sns.regplot(x="population_proper", y="age", data = new_df)
 # Show plot
 plt.show()
 
+# Paste code to change the figure style and palette:
+plt.close()
+
+sns.set_style("darkgrid")
+sns.set_palette("bright")
+sns.despine()
+
+sns.regplot(x = "population_proper", y = "age", data = new_df)
+
+plt.show()
+
+# Paste code to change the axes:
+
+ax = plt.subplot(1, 1, 1)
+ax.set_xticks([100000, 1000000, 2000000, 4000000, 8000000])
+ax.set_xticklabels(["100k", "1m", "2m","4m", "8m"])
+
+plt.show()
+# Paste code to title the axes and the plot: 
+ax.set_xlabel("City Population")
+ax.set_ylabel("User Age")
+plt.title("Age vs Population")
+
+plt.show()
